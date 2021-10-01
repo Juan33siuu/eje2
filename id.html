@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Id</title>
+	<style>
+		.activador{
+			position: absolute;
+			top: 40px;
+			left: 500px;
+			background: #52FFBD;
+			font-size: 50px;
+			font-family: Comic Sans Ms;
+			height: 100px;
+			width: 320px;
+		}
+		.acti2{
+			position: absolute;
+			top: 510px;
+			left: 500px;
+			background: #52FFBD;
+			font-size: 25px;
+			font-family: Comic Sans Ms;
+			height: 50px;
+			width: 150px;
+		}
+		.cerrar2{
+			position: absolute;
+			top: 510px;
+			left: 670px;
+			background: #52FFBD;
+			font-size: 25px;
+			font-family: Comic Sans Ms;
+			height: 50px;
+			width: 150px;
+		}
+		.grande{
+			position: absolute;
+			top: 20px;
+			left: 200px;
+			background: blue;
+			height: 550px;
+			width: 950px;
+		}
+		.medio1{
+			position: absolute;
+			top: 170px;
+			left: 300px;
+			background: yellow;
+			height: 330px;
+			width: 750px;
+			display: none;
+		}
+		.medio2{
+			position: absolute;
+			top: 170px;
+			left: 270px;
+			background: yellow;
+			height: 300px;
+			width: 800px;
+			display: none;
+			
+		}
+		.parrafo{
+			font-size: 22px;
+			font-family: Comic Sans MS;
+		}
+		.parra2{
+			font-size: 20px;
+			font-family: Comic Sans MS;
+			position: absolute;
+			left: 170px;
+			top: 50px;
+		}
+		.cerrar{
+			position: absolute;
+			top: 60px;
+			left: 850px;
+			background: #52FFBD;
+			font-size: 25px;
+			font-family: Comic Sans Ms;
+			height: 50px;
+			width: 100px;
+		}
+		
+
+	</style>
+</head>
+<body bgcolor="grey">
+	<div class="grande" id="grande"></div>
+	<center><div class="activador" onclick="document.getElementById('medio').style.display='block',document.getElementById('audi').play()">Excel</div></center>
+	<div class="cerrar" onclick="document.getElementById('medio').style.display='none',document.getElementById('audi2').play()"><center>Cerrar</center></div>
+	<div class="medio1" id="medio">
+		<center><div class="parrafo">Una función condicional es aquella que nos permite realizar una acción siempre y cuando se cumpla con una condición determinada por el usuario. Por ejemplo, cuando se quiere saber cuales fueron las ventas de un empleado, caso en el cual Excel sumará sólo las ventas de Ricardo Rave, por ejemplo. El verdadero potencial de excel está fundamentado en el usa de funciones preestablecidas y el uso de restricciones en estas</div></center><br>
+			<center><img src="img1.png"></center>
+	</div>
+<div class="medio2" id="med"><br><br><br><br>
+
+	<div class="parra2">El fútbol o futbol​ ​ es un deporte de equipo jugado entre dos conjuntos de once jugadores cada uno y algunos árbitros que se ocupan de que las normas se cumplan correctamente. Es ampliamente considerado el deporte más popular del mundo, pues lo practican unas 270 millones de personas, tratan de introducir un balón en la portería del contrario impulsándolo con los pies, la cabeza o cualquier parte del cuerpo excepto las manos y los brazos.</div>
+<img src="futbol.png"></div>
+		<div class="acti2" onclick="document.getElementById('med').style.display='block',document.getElementById('audi').play()"><center>Futbol</center></div>
+		<div class="cerrar2" onclick="document.getElementById('med').style.display='none',document.getElementById('audi2').play()"><center>Cerrar</center></div>
+		<audio class="audio" id="audi" src="audi.wav"></audio>
+		<audio class="audio" id="audi2" src="audicerrar.wav"></audio>
+</body>
+</html>
